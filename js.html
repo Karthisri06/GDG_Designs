@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<body>
+    <input type="text" id="inputBox" placeholder="Enter something">
+    <button onclick="printInput()">Print</button>
+    <p id="output"></p>
+    <script>
+       function printInput() {
+       let inputValue = document.getElementById('inputBox').value;
+    document.getElementById('output').innerText = inputValue;
+}     
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body {
+    font-family: 'Inria Serif', serif;
+    margin: 0;
+    padding: 0;
+  }
+  /* Header Styles */
+header {
+    position:absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  header .logo {
+    margin-left: 20px;
+  }
+  
+  header .logo img {
+    height: 100px;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+  h3{
+    text-align:center;
+    margin:10px 0;
+  }
+  
+  
+  h1 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+    text-align:flex-start;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+  
+  .about-container {
+    padding: 60px;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .about-image {
+    flex: 1;
+    min-width: 200px; 
+    order: 2; 
+  }
+  
+  .about-image img {
+    width: 80%;
+    height: auto;
+  }
+  
+  .about-text {
+    flex: 2;
+    order: 1; 
+  }
+  #about h1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #333;
+    margin: 10px auto 0;
+  }
+  
+  #about p {
+    margin-bottom: 20px;
+    text-align:flex-start;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .about-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .about-image, .about-text {
+      flex: none;
+      order: initial; /* Reset order for small screens */
+    }
+  }
+  /* Footer Styles */
+#footer {
+    background-color:white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  #footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #footer p {
+    margin: 0;
+  }
+  
+  
